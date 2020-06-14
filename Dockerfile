@@ -12,6 +12,6 @@ WORKDIR /app
 COPY . /app
 ENV PORT=3000
 RUN npm install  #dependencies
-RUN cd /tmp/src && git clean -xfd && git checkout -- hooks && git statu
+
 EXPOSE $PORT
 ENTRYPOINT ["node", "app.js"]
